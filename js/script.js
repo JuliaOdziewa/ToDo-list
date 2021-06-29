@@ -40,10 +40,10 @@
     };
 
     const render = () => {
-        let htmlString = "";
+        let tasksListHTMLContent = "";
 
         for (const task of tasks) {
-            htmlString += `
+            tasksListHTMLContent += `
         <li 
             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
         >
@@ -55,7 +55,7 @@
 
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
         bindRemoveEvents();
         bindDoneEvents();
 
