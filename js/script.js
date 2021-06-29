@@ -29,15 +29,15 @@
         });
     };
 
-    const bindEvents = () => {
-        const toggleDoneButtons = document.querySelectorAll("js-done");
+    const bindDoneEvents = () => {
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
 
-        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+        toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
-                toggleTaskDone(index);
+                toggleTaskDone(taskIndex);
             });
         });
-    }
+    };
 
     const render = () => {
         let htmlString = "";
@@ -57,7 +57,7 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
         bindRemoveEvents();
-        bindEvents();
+        bindDoneEvents();
 
     };
 
