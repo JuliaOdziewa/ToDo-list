@@ -16,3 +16,27 @@
 .tasks__content--done {
     text-decoration: line-through;
 }
+
+.tasks__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.tasks__button--toggleDone {
+    background-color: hsl(120, 61%, 34%);
+}
+
+.tasks__button--toggleDone:hover {
+    background-color: hsl(120, 61%, 39%);
+}
+
+.tasks__button--toggleDone:active {
+    background-color: hsl(120, 61%, 40%);
+}
+
+.tasks__button--remove {
+    background-color: hsl(348, 83%, 47%);
+}
