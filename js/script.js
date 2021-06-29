@@ -44,12 +44,16 @@
 
         for (const task of tasks) {
             tasksListHTMLContent += `
-        <li 
-            ${task.done ? "style=\"text-decoration: line-through\"" : ""}
+            <li 
+            class="tasks__item js-task"
         >
-            <button class="button button--done js-done">zrobione?</button>
-            <button class="button button--remove js-remove">usuń</button>
-            ${task.content}
+            <button class="tasks__button tasks__button--toggleDone js-toggleDone">
+                ${task.done ? "✓" : ""}
+            </button>
+            <span class="tasks__content${task.done ? " tasks__content--done" : ""}">${task.content}</span>
+            <button class="tasks__button tasks__button--remove js-remove">
+                🗑
+            </button>
         </li>
         `;
 
