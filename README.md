@@ -1,6 +1,6 @@
 # To-Do list
 
-
+![](https://github.com/JuliaOdziewa/ToDo-list/blob/main/images/readme_animation.gif?raw=true)
 
 ## Demo
 
