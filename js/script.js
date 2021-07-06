@@ -106,13 +106,26 @@
     `;
     };
 
+    const bindButtonsEvents = () => {
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
+        if (markAllDoneButton) {
+            markAllDoneButton.addEventListener("click", markAllTasksDone);
+        };
+
+        const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+
+        if (toggleHideDoneTasksButton) {
+            toggleHideDoneTasksButton.addEventListener(toggleHideDoneTasks);
+        };
+    };
+
     const render = () => {
         renderTasks();
         renderButtons();
 
         bindRemoveEvents();
         bindToggleDoneEvents();
-
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
