@@ -27,6 +27,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: background-color 0.3s;
 }
 
 .tasks__button--toggleDone {
@@ -52,4 +53,3 @@
 .tasks__button--remove:active {
     background-color: hsl(348, 83%, 57%);
 }
-
