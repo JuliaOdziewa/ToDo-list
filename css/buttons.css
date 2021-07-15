@@ -11,6 +11,13 @@
     transition: color 0.3s;
 }
 
+@media (max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
 .buttons__button:disabled {
     color: #ccc;
 }
