@@ -1,6 +1,6 @@
 # To-Do list
 
-![](https://github.com/JuliaOdziewa/ToDo-list/blob/main/images/readme_animation.gif?raw=true)
+![](https://github.com/JuliaOdziewa/ToDo-list/blob/main/images/todolist.PNG?raw=true)
 
 ## Demo
 
@@ -9,6 +9,10 @@
 ## Decription
 
 This is a simple To-Do list. You can add to it your daily tasks. Completed task can be marked done or deleted.
+
+### 🔥New update!!!🔥
+
+Now you can mark all your tasks done and then hide them.
 
 ## Technologies
 
