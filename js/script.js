@@ -53,8 +53,6 @@
         });
     };
 
-
-
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
@@ -67,7 +65,7 @@
 
     const renderTasks = () => {
         const taskToHTML = task => `
-        <li 
+        <li
             class="tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task"
         >
             <button class="tasks__button tasks__button--toggleDone js-toggleDone">
@@ -79,7 +77,6 @@
             </button>
         </li>
         `;
-
 
         const tasksElement = document.querySelector(".js-tasks");
         tasksElement.innerHTML = tasks.map(taskToHTML).join("");
@@ -94,16 +91,13 @@
         }
 
         buttonsElement.innerHTML = `
-        <button class="buttons__button js-toggleHideDoneTasks">
-            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
-        </button>
-        <button 
-            class="buttons__button js-markAllDone"
-            ${tasks.every(({ done }) => done) ? "disabled" : ""}
-        >
-            Ukończ wszystkie
-        </button>
-    `;
+            <button class="buttons__button js-toggleHideDoneTasks">
+                ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            </button>
+            <button class="buttons__button js-markAllDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+                Ukończ wszystkie
+            </button>
+        `;
     };
 
     const bindButtonsEvents = () => {
@@ -151,5 +145,4 @@
     };
 
     init();
-
 }
